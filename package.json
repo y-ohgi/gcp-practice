@@ -3,7 +3,7 @@
   "scripts": {
     "start": "node index.js",
     "standard": "node node_modules/standard/bin/cmd.js --fix",
-    "deploy": "yarn run standard && gloud app -q deploy"
+    "deploy": "yarn run standard && gcloud app -q deploy"
   },
   "dependencies": {
     "@google-cloud/spanner": "^1.1.0",
