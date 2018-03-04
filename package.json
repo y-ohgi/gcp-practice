@@ -1,0 +1,14 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "start": "node index.js",
+    "standard": "node node_modules/standard/bin/cmd.js",
+    "deploy": "yarn run standard && gloud app -q deploy"
+  },
+  "dependencies": {
+    "express": "^4.16.2"
+  },
+  "devDependencies": {
+    "standard": "^11.0.0"
+  }
+}
