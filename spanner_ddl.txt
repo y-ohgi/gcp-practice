@@ -1,0 +1,15 @@
+CREATE TABLE blogs (
+  blog_id STRING(36),
+  title STRING(150),
+  body STRING(MAX),
+  created_at TIMESTAMP
+) PRIMARY KEY(blog_id);
+
+CREATE TABLE comments (
+  comment_id STRING(36),
+  blog_id STRING(36),
+  name STRING(50),
+  body STRING(MAX),
+  created_at TIMESTAMP
+) PRIMARY KEY(blog_id, comment_id),
+  INTERLEAVE IN PARENT blogs ON DELETE CASCADE;

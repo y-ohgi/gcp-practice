@@ -1,3 +1,4 @@
 # 直下にDockerfileを配置したいため、customを選択。
-runtime: custom
+# runtime: custom
+runtime: nodejs
 env: flex
