@@ -2,3 +2,5 @@
 # runtime: custom
 runtime: nodejs
 env: flex
+includes:
+  - secret.yaml
