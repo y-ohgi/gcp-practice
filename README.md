@@ -21,4 +21,5 @@ spanner practice
 5. 動作確認
     - `$ yarn run start`
 6. デプロイ
+    - `./secret.yaml` を.envrc同様適宜編集
     - `$ yarn run deploy`
