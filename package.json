@@ -2,7 +2,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node index.js",
-    "standard": "node node_modules/standard/bin/cmd.js",
+    "standard": "node node_modules/standard/bin/cmd.js --fix",
     "deploy": "yarn run standard && gloud app -q deploy"
   },
   "dependencies": {
