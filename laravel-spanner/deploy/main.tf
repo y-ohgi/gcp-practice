@@ -17,7 +17,8 @@ resource "google_project_services" "project" {
     "logging.googleapis.com",
     "monitoring.googleapis.com",
     "pubsub.googleapis.com",
-    "sqladmin.googleapis.com"
+    "sqladmin.googleapis.com",
+    "spanner.googleapis.com"
   ]
 }
 
