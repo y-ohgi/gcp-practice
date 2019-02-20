@@ -20,3 +20,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - .:/var/www/html:cached
+      - ~/.config:/home/www/.config:ro
