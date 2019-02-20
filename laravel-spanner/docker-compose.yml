@@ -1,0 +1,22 @@
+version: '3.5'
+
+services:
+  nginx:
+    build:
+      context: .
+      dockerfile: docker/nginx/Dockerfile
+    volumes:
+      - ./public:/var/www/html/public:ro
+    ports:
+      - 8080:80
+    environment:
+      PHP_HOST: app
+    depends_on:
+      - app
+
+  app:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/var/www/html:cached
